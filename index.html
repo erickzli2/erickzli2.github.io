@@ -17,6 +17,16 @@
 		</div>
 		<script>
 var vlSpec = {
-	"$schema":
+	"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+	"data": {
+		"url": "building_inventory.json"
+	},
+	"mark": "circle"
+	"encoding": {
+		"x": {"field": "Year Acquired", "type": "quantitative", "bin": true},
+		"y": {"aggregate": "count", "type": "quantitative"},
+		"color": {"aggregate": "sum", "field": "Square Footage", "scale": {"type": "log"}}
+	}
+}
 	</body>
 </html>
