@@ -21,9 +21,9 @@ var vlSpec = {
 	"data": {
 		"url": "https://raw.githubusercontent.com/erickzli2/erickzli2.github.io/master/building_inventory.json"
 	},
-	"mark": "circle",
+	"mark": "bar",
 	"encoding": {
-		"x": {"field": "Year Acquired", "type": "quantitative", "bin": true},
+		"x": {"field": "Congress Dist", "type": "quantitative", "bin": true},
 		"y": {"aggregate": "count", "type": "quantitative"},
 		"color": {"aggregate": "sum", "field": "Square Footage", "scale": {"type": "log"}}
 	}
